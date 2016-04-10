@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "freq_w.h"
+#include <locale.h>
 
 int *freq_w(FILE *f){
 	if(f == NULL){
@@ -8,6 +9,7 @@ int *freq_w(FILE *f){
 		return NULL;
 	}
 
+    setlocale(LC_ALL,"");
 	unsigned char x;
 	int i;
 	int *countsort;
