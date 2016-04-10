@@ -6,6 +6,7 @@ int main()
 {
     int opcao = 0;
     char h[999];
+    FILE *f;
     printf("DIGITE O ENDERE\128O DO ARQUIVO: \n");
     scanf("%s",h);
 
@@ -14,7 +15,9 @@ int main()
     printf("3 - SAIR\n");
     printf("ESCOLHA UMA OP\128AO: ");
     scanf("%d",&opcao);
-    compress(h);
+    f = fopen(h, "r");
+    compress(f);
+    
 
 
     return 0;

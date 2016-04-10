@@ -4,12 +4,8 @@
 #include <locale.h>
 
 int *freq_w(FILE *f){
-	if(f == NULL){
-		printf("ERRO NA LEITURA DO ARQUIVO!\n");
-		return NULL;
-	}
 
-    setlocale(LC_ALL,"");
+    setlocale(LC_ALL,"");//DEFINE A LOCALIZACAO ATUAL.
 	unsigned char x;
 	int i;
 	int *countsort;

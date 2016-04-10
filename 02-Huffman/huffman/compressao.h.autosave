@@ -1,0 +1,4 @@
+//Arquivo Ponto.h
+
+void compress(FILE *f);
+
